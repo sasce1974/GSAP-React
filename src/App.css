@@ -1,7 +1,17 @@
+*{
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  position: relative;
+  max-width: 1440px;
+  padding-top: 1.625rem;
 }
 
+@media  screen and (max-width: 1200px) {
+  .App{
+  padding: 2.94rem 1.75rem 5.25rem;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

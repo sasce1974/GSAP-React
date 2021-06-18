@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Faible-BlackItalic';
+  src: local('Faible-BlackItalic'),
+       url('./assets/fonts/Faible/Faible-BlackItalic.woff') format('woff'),
+       url('./assets/fonts/Faible/Faible-BlackItalic.woff2') format('woff2');  
+}
+
+@font-face {
+  font-family: 'Cera-Pro';
+  src: local('Cera-Pro'),
+      url('./assets/fonts/ceraprofont/Cera-Pro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Spoof Trial Light';
+  src: local('Spoof Trial Light'),
+      url('./assets/fonts/SpoofTrial/SpoofTrial-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Spoof Trial Bold';
+  src: local('Spoof Trial Bold'),
+      url('./assets/fonts/SpoofTrial/SpoofTrial-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Faible Bold';
+  src: local('Faible Bold'),
+      url('./assets/fonts/Faible/Faible-Bold.woff') format('woff'),
+      url('./assets/fonts/Faible/Faible-Bold.woff2') format('woff2');   
+}
+
+@font-face {
+  font-family: 'Faible Light';
+  src: local('Faible Light'),
+      url('./assets/fonts/Faible/Faible-Light.woff') format('woff'),
+      url('./assets/fonts/Faible/Faible-Light.woff2') format('woff2');   
+}
