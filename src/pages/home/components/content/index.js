@@ -1,6 +1,5 @@
 import React from "react";
 
-function Content() {
+export default function Content() {
   return <div></div>;
 }
-export default Content;

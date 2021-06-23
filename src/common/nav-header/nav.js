@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import styled from "styled-components";
 import menu_icon from "../../assets/svg/menu-icon.svg";
 import { maxMobileWidth } from "../../common/style/sizes.js";
@@ -32,13 +31,13 @@ const Link = styled.a`
   margin: 0px 1.7rem;
   padding-bottom: 1rem;
   text-decoration: none;
-  &:hover {
-    padding: 1rem 1.5rem;
-    background: #faa834;
-    border-radius: 0.5rem;
-    color: white;
-    margin: 0 0.2rem;
-  }
+  // &:hover {
+  //   padding: 1rem 1.5rem;
+  //   background: #faa834;
+  //   border-radius: 0.5rem;
+  //   color: white;
+  //   margin: 0 0.2rem;
+  // }
 `;
 const GetLinkNew = styled.div`
   padding: 16px 0;
@@ -104,35 +103,30 @@ const MenuIcon = styled.div`
 
   @media only screen and (max-width: 1100px) {
     display: block;
-    &:hover ${GetLinkNew} {
-      display: flex;
-    }
   }
 `;
-class Nav extends Component {
-  render() {
-    return (
-      <Container>
-        <GetLink>
-          <Link href="#">Benefits</Link>
-          <Link href="#">Your profile</Link>
-          <Link href="#">Connections</Link>
-          <Link href="#">Plans & Pricing</Link>
-        </GetLink>
-        <Button>
-          <ButtonText> Get started</ButtonText>
-        </Button>
-        <MenuIcon>
-          <GetLinkNew className="getlink">
-            <LinkNew href="#">Benefits</LinkNew>
-            <LinkNew href="#">Your profile</LinkNew>
-            <LinkNew href="#">Connections</LinkNew>
-            <LinkNew href="#">Plans & Pricing</LinkNew>
-          </GetLinkNew>
-          <img src={menu_icon} alt="menu icon" />
-        </MenuIcon>
-      </Container>
-    );
-  }
+
+export default function Nav() {
+  return (
+    <Container>
+      <GetLink>
+        <Link href="#">Benefits</Link>
+        <Link href="#">Your profile</Link>
+        <Link href="#">Connections</Link>
+        <Link href="#">Plans & Pricing</Link>
+      </GetLink>
+      <Button>
+        <ButtonText> Get started</ButtonText>
+      </Button>
+      <MenuIcon>
+        <GetLinkNew className="getlink">
+          <LinkNew href="#">Benefits</LinkNew>
+          <LinkNew href="#">Your profile</LinkNew>
+          <LinkNew href="#">Connections</LinkNew>
+          <LinkNew href="#">Plans & Pricing</LinkNew>
+        </GetLinkNew>
+        <img src={menu_icon} alt="menu icon" />
+      </MenuIcon>
+    </Container>
+  );
 }
-export default Nav;

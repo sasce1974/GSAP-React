@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const GroupItem = styled.div`
   background: #FFF8EF;;
@@ -30,16 +29,13 @@ const GroupItem = styled.div`
     background: #FFFAF4;
 `;
 
-class ImgItem extends Component {
-  render() {
-    const { path, title, content } = this.props;
-    return (
-      <GroupItem>
-        <img src={path} className="item-img" alt='GroupItemImg' />
-        <p className="title">{title}</p>
-        <p className="content">{content}</p>
-      </GroupItem>
-    );
-  }
+export default function ImgItem(props) {
+  return (
+    <GroupItem>
+      <img src={props.path} className="item-img" alt="GroupItemImg" />
+      <p className="title">{props.title}</p>
+      <p className="content">{props.content}</p>
+    </GroupItem>
+  );
 }
-export default ImgItem;
+
